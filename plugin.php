@@ -1,6 +1,6 @@
 <?php
 
-class DatawrapperPlugin_PluginEmbed extends DatawrapperPlugin {
+class DatawrapperPlugin_PublishEmbed extends DatawrapperPlugin {
 
     public function init() {
         $plugin = $this;
@@ -9,7 +9,7 @@ class DatawrapperPlugin_PluginEmbed extends DatawrapperPlugin {
             // no export possible without email
             $cfg = $plugin->getConfig();
             return array(
-                'id' => 'export-embed',
+                'id' => 'publish-embed',
                 'title' => __('publish / button-label', $plugin->getName()),
                 'icon' => 'code',
                 'order' => 350,
