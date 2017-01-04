@@ -59,7 +59,7 @@ require(['dw/chart/publish'], function() {
                 }
 
                 $.ajax({
-                    url: '/api/charts/' + chart_id + '/publish?local=1',
+                    url: '/api/charts/' + chart_id + '/publish',
                     type: 'post'
                 }).done(function() {
                     callback(null);
